@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>me.daddy</groupId>
+  <artifactId>RhinoBase</artifactId>
+  <name>RhinoBase</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <url>http://maven.apache.org</url>
+  <build>
+    <defaultGoal>clean install</defaultGoal>
+    <plugins>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.3</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <id>sk89q-repo-we</id>
+      <url>http://maven.sk89q.com/repo/com/sk89q/worldedit/5.5.8/</url>
+    </repository>
+    <repository>
+      <id>vault-repo</id>
+      <url>http://nexus.hc.to/content/repositories/pub_releases</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>org.paperspigot</groupId>
+      <artifactId>API</artifactId>
+      <version>1.7.10-R0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Bryeguy527\Desktop\Solenxia Project\Official Solenxia Workspace\RhinoBase/Depends/API.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>site.solenxia</groupId>
+      <artifactId>base</artifactId>
+      <version>1.7.10-R0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Bryeguy527\Desktop\Solenxia Project\Official Solenxia Workspace\RhinoBase/Depends/rhinocore.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>org.paperspigot</groupId>
+      <artifactId>Server</artifactId>
+      <version>1.7.10-R0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Bryeguy527\Desktop\Solenxia Project\Official Solenxia Workspace\RhinoBase/Depends/Server.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.milkbowl.vault</groupId>
+      <artifactId>VaultAPI</artifactId>
+      <version>1.6</version>
+      <scope>provided</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>bukkit</artifactId>
+          <groupId>org.bukkit</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>site.solenxia</groupId>
+      <artifactId>Worldedit</artifactId>
+      <version>1.7.10-R0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Bryeguy527\Desktop\Solenxia Project\Official Solenxia Workspace\RhinoBase/Depends/Worldedit-6.2.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>site.solenxia</groupId>
+      <artifactId>PL</artifactId>
+      <version>1.7.10-R0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Bryeguy527\Desktop\Solenxia Project\Official Solenxia Workspace\RhinoBase/Depends/ProtocolLib.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>site.solenxia</groupId>
+      <artifactId>LB</artifactId>
+      <version>1.7.10-R0.1-SNAPSHOT</version>
+      <scope>system</scope>
+      <systemPath>C:\Users\Bryeguy527\Desktop\Solenxia Project\Official Solenxia Workspace\RhinoBase/Depends/Litebans.jar</systemPath>
+    </dependency>
+  </dependencies>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+</project>
+
